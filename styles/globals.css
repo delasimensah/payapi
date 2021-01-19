@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Public Sans", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "DM Serif Display", serif;
+}
+
+@layer base {
+  body {
+    @apply bg-lwWhite;
+  }
+
+  button {
+    @apply focus:outline-none;
+  }
+}
+
+@layer components {
+  .wrapper {
+    @apply relative px-5 py-10 md:px-10 lg:px-20 xl:px-40 xl:py-10;
+  }
+
+  .demo-btn {
+    @apply inline-block px-8 py-3 font-bold text-white rounded-full bg-darkPink hover:bg-charmPink;
+  }
+
+  .heading {
+    @apply text-3xl text-center md:text-4xl lg:text-5xl xl:text-left;
+  }
+
+  .light-btn {
+    @apply z-40 inline-block px-5 py-3 border rounded-full border-lwWhite hover:bg-lwWhite hover:text-mirageBlue;
+  }
+
+  .social-icon {
+    @apply z-50 cursor-pointer fill-current text-lwWhite hover:text-charmPink;
+  }
+}
+
+@layer utilities {
+}
