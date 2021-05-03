@@ -4,6 +4,7 @@ import Head from "next/head";
 //components
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import CallToAction from "../components/CallToAction";
 
 const Layout = ({ children }) => {
   return (
@@ -17,6 +18,8 @@ const Layout = ({ children }) => {
       <Navbar />
 
       <main className="min-h-screen">{children}</main>
+
+      <CallToAction />
 
       <Footer />
     </div>

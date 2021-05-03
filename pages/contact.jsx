@@ -1,14 +1,9 @@
 import React from "react";
 
 //components
-import CallToAction from "../components/CallToAction";
 
 const Contact = () => {
-  return (
-    <div>
-      <CallToAction />
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Contact;

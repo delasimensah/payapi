@@ -2,9 +2,6 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import Link from "next/link";
 
-//components
-import CallToAction from "../components/CallToAction";
-
 const Home = () => {
   const logos = [
     "/assets/shared/desktop/tesla.svg",
@@ -38,26 +35,27 @@ const Home = () => {
       user experience in mind. Customers could instantly authenticate their account.`,
     },
   ];
+
   return (
     <>
       <img
         src="/assets/shared/desktop/bg-pattern-circle.svg"
         alt="bg-pattern-circle"
-        className="absolute -top-52 md:-top-96 xl:-top-52 lg:-top-60 lg:-right-44 xl:-right-36 z-10 transform scale-150 md:scale-105 lg:scale-100"
+        className="absolute z-10 transform scale-150 -top-52 md:-top-96 xl:-top-52 lg:-top-60 lg:-right-44 xl:-right-36 md:scale-105 lg:scale-100"
       />
 
-      <div className="wrapper grid lg:grid-cols-2 py-0">
-        <div className="lg:col-start-2 flex items-center justify-center xl:items-start xl:justify-end">
+      <div className="grid py-0 wrapper lg:grid-cols-2">
+        <div className="flex items-center justify-center lg:col-start-2 xl:items-start xl:justify-end">
           <img
             src="/assets/home/desktop/illustration-phone-mockup.svg"
             alt="illustration-phone-mockup"
-            className="z-40 transform scale-90 md:scale-90 lg:scale-75 xl:scale-100 relative -top-16 -right-5 md:-top-10 md:-right-5 lg:-top-20 lg:-right-7 xl:-top-8 xl:right-0"
+            className="relative z-40 transform scale-90 md:scale-90 lg:scale-75 xl:scale-100 -top-16 -right-5 md:-top-10 md:-right-5 lg:-top-20 lg:-right-7 xl:-top-8 xl:right-0"
           />
         </div>
 
         <Fade left>
-          <div className="lg:row-start-1 space-y-10 pb-32 lg:pb-0 lg:pt-28">
-            <h1 className="text-sjBlue text-center leading-tight text-32 md:px-20 lg:pl-0 lg:pr-12 lg:text-left md:text-5xl xl:text-6xl">
+          <div className="pb-32 space-y-10 lg:row-start-1 lg:pb-0 lg:pt-28">
+            <h1 className="leading-tight text-center text-sjBlue text-32 md:px-20 lg:pl-0 lg:pr-12 lg:text-left md:text-5xl xl:text-6xl">
               Start building with our APIs for absolutely free.
             </h1>
 
@@ -70,13 +68,13 @@ const Home = () => {
                 />
 
                 <Link href="/contact">
-                  <a className="demo-btn block text-center relative md:-left-10">
+                  <a className="relative block text-center demo-btn md:-left-10">
                     Schedule a Demo
                   </a>
                 </Link>
               </div>
 
-              <span className="text-lsjBlue px-5 block text-center lg:text-left">
+              <span className="block px-5 text-center text-lsjBlue lg:text-left">
                 Have any questions?{" "}
                 <Link href="/contact">
                   <a className="font-bold text-sjBlue">Contact us</a>
@@ -87,18 +85,18 @@ const Home = () => {
         </Fade>
       </div>
 
-      <div className="wrapper bg-mirageBlue text-lwWhite overflow-hidden">
+      <div className="overflow-hidden wrapper bg-mirageBlue text-lwWhite">
         <img
           src="/assets/shared/desktop/bg-pattern-circle.svg"
           alt="bg-pattern-circle"
-          className="absolute -top-52 md:-top-576 lg:-top-96 lg:-left-40 left-0 transform scale-105"
+          className="absolute left-0 transform scale-105 -top-52 md:-top-576 lg:-top-96 lg:-left-40"
         />
         <div className="py-10 space-y-10 xl:grid xl:grid-cols-2 xl:gap-10">
           <Fade left cascade>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-10 xl:gap-0 xl:col-start-2">
+            <div className="grid grid-cols-2 gap-10 md:grid-cols-3 xl:gap-0 xl:col-start-2">
               {logos.map((logo, idx) => {
                 return (
-                  <div className="flex justify-center items-center" key={idx}>
+                  <div className="flex items-center justify-center" key={idx}>
                     <img src={logo} alt="logo" className="" />
                   </div>
                 );
@@ -110,7 +108,7 @@ const Home = () => {
             <div className="space-y-5">
               <h1 className="heading">Who we work with</h1>
 
-              <p className="text-lsjBlue text-center md:px-28 lg:px-32 xl:px-0 xl:text-left">
+              <p className="text-center text-lsjBlue md:px-28 lg:px-32 xl:px-0 xl:text-left">
                 Today, millions of people around the world have successfully
                 connected their accounts to apps they love using our API. We
                 provide developers with the tools they need to create easy and
@@ -127,9 +125,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="wrapper py-10 grid xl:grid-cols-2">
+      <div className="grid py-10 wrapper xl:grid-cols-2">
         <Fade left>
-          <div className="flex justify-center items-center">
+          <div className="flex items-center justify-center">
             <img
               src="/assets/home/desktop/illustration-easy-to-implement.svg"
               alt="illustration-easy-to-implement"
@@ -149,15 +147,15 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="wrapper overflow-hidden">
+      <div className="overflow-hidden wrapper">
         <img
           src="/assets/shared/desktop/bg-pattern-circle.svg"
           alt="bg-pattern-circle"
-          className="absolute -right-80 -top-10 hidden xl:block"
+          className="absolute hidden -right-80 -top-10 xl:block"
         />
-        <div className="py-10 grid xl:grid-cols-2">
+        <div className="grid py-10 xl:grid-cols-2">
           <Fade left>
-            <div className="flex justify-center items-center xl:col-start-2">
+            <div className="flex items-center justify-center xl:col-start-2">
               <img
                 src="/assets/home/desktop/illustration-simple-ui.svg"
                 alt="illustration-simple-ui"
@@ -187,7 +185,7 @@ const Home = () => {
                   className="flex flex-col items-center justify-center space-y-5"
                 >
                   <img src={feature.icon} alt={feature.heading} />
-                  <h1 className="text-center text-sjBlue text-xl">
+                  <h1 className="text-xl text-center text-sjBlue">
                     {feature.heading}
                   </h1>
                   <p className="text-center text-lsjBlue">{feature.text}</p>
@@ -197,8 +195,6 @@ const Home = () => {
           </div>
         </Fade>
       </div>
-
-      <CallToAction />
     </>
   );
 };
