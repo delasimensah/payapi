@@ -2,16 +2,10 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import Link from "next/link";
 
-const Home = () => {
-  const logos = [
-    "/assets/shared/desktop/tesla.svg",
-    "/assets/shared/desktop/microsoft.svg",
-    "/assets/shared/desktop/hewlett-packard.svg",
-    "/assets/shared/desktop/oracle.svg",
-    "/assets/shared/desktop/google.svg",
-    "/assets/shared/desktop/nvidia.svg",
-  ];
+//components
+import ClientLogos from "../components/ClientLogos";
 
+const Home = () => {
   const features = [
     {
       icon: "/assets/home/desktop/icon-personal-finances.svg",
@@ -63,7 +57,7 @@ const Home = () => {
               <div className="space-y-5 md:space-y-0 md:flex md:justify-center lg:justify-start">
                 <input
                   type="text"
-                  className="bg-lwWhite shadow-md rounded-full w-full md:w-54%  px-5 py-3 focus:outline-none cursor-pointer"
+                  className="bg-lwWhite shadow-md rounded-full w-full md:w-54%  px-5 py-3 focus:outline-none cursor-pointer border-0 focus:ring-0"
                   placeholder="Enter email address"
                 />
 
@@ -92,17 +86,7 @@ const Home = () => {
           className="absolute left-0 transform scale-105 -top-52 md:-top-576 lg:-top-96 lg:-left-40"
         />
         <div className="py-10 space-y-10 xl:grid xl:grid-cols-2 xl:gap-10">
-          <Fade left cascade>
-            <div className="grid grid-cols-2 gap-10 md:grid-cols-3 xl:gap-0 xl:col-start-2">
-              {logos.map((logo, idx) => {
-                return (
-                  <div className="flex items-center justify-center" key={idx}>
-                    <img src={logo} alt="logo" className="" />
-                  </div>
-                );
-              })}
-            </div>
-          </Fade>
+          <ClientLogos />
 
           <div className="space-y-16 xl:row-start-1">
             <div className="space-y-5">
