@@ -47,13 +47,9 @@ const ClientLogos = () => {
 
   return (
     <Fade left cascade>
-      <div className="grid grid-cols-2 gap-10 md:grid-cols-3 xl:gap-0 xl:col-start-2">
+      <div className="grid grid-cols-2 gap-10 md:grid-cols-3 xl:col-start-2">
         {logos.map((logo, idx) => {
-          return (
-            <div className="flex items-center justify-center" key={idx}>
-              {logo}
-            </div>
-          );
+          return <div key={idx}>{logo}</div>;
         })}
       </div>
     </Fade>

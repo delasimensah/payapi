@@ -55,6 +55,10 @@ h4 {
     @apply z-40 inline-block px-5 py-3 border rounded-full border-lwWhite hover:bg-lwWhite hover:text-mirageBlue;
   }
 
+  .outline-btn {
+    @apply z-40 inline-block px-10 py-2 font-semibold border rounded-full border-sjBlue text-sjBlue hover:bg-sjBlue hover:text-lwWhite;
+  }
+
   .social-icon {
     @apply z-50 cursor-pointer fill-current text-lwWhite hover:text-charmPink;
   }

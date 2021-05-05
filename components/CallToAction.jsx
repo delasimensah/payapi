@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 
 const CallToAction = () => {
   return (
-    <div className="pb-40 space-y-5 wrapper xl:flex xl:justify-between xl:items-center">
+    <div className="pb-40 space-y-5 lg:pb-20 wrapper xl:flex xl:justify-between xl:items-center">
       <Fade left cascade>
         <div>
           <h1 className="heading text-sjBlue">Ready to start?</h1>
